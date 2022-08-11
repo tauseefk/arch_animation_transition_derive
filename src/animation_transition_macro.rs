@@ -1,6 +1,6 @@
 pub use crate::prelude::*;
 
-pub fn impl_animation_transition_macro(ast: &mut syn::DeriveInput) -> TokenStream {
+pub fn impl_animation_transition_macro(ast: syn::DeriveInput) -> TokenStream {
     let struct_name = &ast.ident;
 
     let generics = &ast.generics;

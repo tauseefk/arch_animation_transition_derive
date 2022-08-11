@@ -12,7 +12,7 @@ use prelude::*;
 
 #[proc_macro_derive(AnimationTransitionMacro, attributes(variant))]
 pub fn animation_transition_macro_derive(input: TokenStream) -> TokenStream {
-    let mut ast = parse_macro_input!(input as DeriveInput);
+    let ast = parse_macro_input!(input as DeriveInput);
 
-    impl_animation_transition_macro(&mut ast)
+    impl_animation_transition_macro(ast)
 }
