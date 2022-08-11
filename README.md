@@ -1,4 +1,4 @@
-# animation-transitions
+# animation-transition-derive-macro
 
 Fancy way to describe animation loops in a single array coz cache friendly.
 This is a lie, all it does is loop over array indices.
