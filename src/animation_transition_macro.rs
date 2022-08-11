@@ -31,7 +31,7 @@ pub fn impl_animation_transition_macro(ast: &mut syn::DeriveInput) -> TokenStrea
         Some(ty) => {
             quote! {
                 impl #impl_generics AnimationTransition<#ty> for #struct_name #type_generics #where_clause {
-                    fn next_idx(&mut self) -> usize {
+                    fn wrapping_next_idx(&mut self) -> usize {
                         let current_idx = self.idx;
                         let (offset, size) = self.variant.page();
 
