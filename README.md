@@ -1,4 +1,4 @@
-# animation-transition-derive-macro
+# animation-transition-derive
 
 This is a companion macro for [animation-transition](https://github.com/tauseefk/animation-transition).
 
